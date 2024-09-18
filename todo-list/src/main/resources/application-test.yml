@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:tb_todoList
+    driver-class-name: org.h2.Driver
+    username: matheus
+    password:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        hbm2ddl:
+          auto: create
